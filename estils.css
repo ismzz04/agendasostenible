@@ -1,0 +1,266 @@
+/* Estils Generals */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    color: #333;
+    background-color: #f4f7f9;
+    line-height: 1.6;
+    padding-top: 70px; /* Per ajustar a la barra fixa */
+}
+
+/* Barra de Navegació */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #4caf50; /* Verd sostenible */
+    padding: 10px 20px;
+    color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.navbar .logo {
+    width: 50px;
+    height: 50px;
+}
+
+.navbar .nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.navbar .nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.navbar .nav-links a:hover {
+    color: #d4edda;
+}
+
+.navbar .user-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.navbar .user-info img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+}
+
+.navbar .user-info a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navbar .user-info a:hover {
+    color: #d4edda;
+}
+
+/* Formularis */
+form {
+    margin: 20px 0;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: auto;
+}
+
+input[type="text"], input[type="email"], input[type="password"], input[type="file"], input[type="date"], textarea, select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    background-color: #4caf50;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #388e3c;
+}
+
+/* Contenidor Principal */
+main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Estil de les Cards */
+.card {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.card h3 {
+    font-size: 1.5rem;
+    color: #4caf50;
+    margin-bottom: 10px;
+}
+
+.card img {
+    max-width: 100%;
+    max-height: 200px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+/* Estils per a Favorits */
+.favorite-list ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.favorite-list li {
+    background: #f9f9f9;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.favorite-list li:hover {
+    background: #e8f5e9;
+}
+
+/* Estils per a la Pàgina d'Administració */
+.admin-panel {
+    background: #fff;
+    padding: 20px;
+    border: 2px solid #4caf50;
+    border-radius: 8px;
+    margin: 20px auto;
+    max-width: 1000px;
+}
+
+.admin-panel h1, .admin-panel h2 {
+    color: #4caf50;
+}
+
+.admin-panel a {
+    color: #388e3c;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px;
+    border: 1px solid #388e3c;
+    border-radius: 4px;
+    transition: background 0.3s;
+}
+
+.admin-panel a:hover {
+    background: #4caf50;
+    color: #fff;
+}
+
+.admin-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.admin-table th, .admin-table td {
+    padding: 10px 15px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+.admin-table th {
+    background: #4caf50;
+    color: #fff;
+}
+
+.admin-table tr:nth-child(even) {
+    background: #f9f9f9;
+}
+
+/* Estils per a Consells i Anuncis */
+.consells .card, .anuncis .card {
+    border: 2px solid #4caf50;
+    background: #f4f9f4;
+}
+
+.consells .card h3, .anuncis .card h3 {
+    color: #388e3c;
+    margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+    background: #fff;
+    padding: 10px;
+    text-align: center;
+    border-top: 2px solid #4caf50;
+    margin-top: 20px;
+}
+
+/* Específic per a Agendasostenible */
+.agenda-container .event-card {
+    background: #e8f5e9;
+    border: 1px solid #4caf50;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+}
+
+.agenda-container .event-card h4 {
+    font-size: 1.2rem;
+    color: #388e3c;
+}
+
+.agenda-container .event-card button {
+    margin-top: 10px;
+    background-color: #388e3c;
+}
+
+.agenda-container .event-card button:hover {
+    background-color: #4caf50;
+}
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    background-color: #4caf50;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #388e3c;
+}
